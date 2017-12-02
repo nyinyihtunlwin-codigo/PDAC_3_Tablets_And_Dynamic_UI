@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_medium_2"
+    android:paddingRight="@dimen/margin_medium_2">
+
+    <ImageView
+        android:id="@+id/iv_weather"
+        android:layout_width="@dimen/img_size"
+        android:layout_height="@dimen/img_size"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:src="@drawable/art_clouds_cl" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/iv_weather"
+        android:gravity="bottom"
+        android:text="@string/placeholder_date"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular" />
+
+    <TextView
+        android:id="@+id/tv_weather_state"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/tv_date"
+        android:layout_below="@id/tv_date"
+        android:text="@string/placeholder_weather_state"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/tv_weather_degree_celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/img_size"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="@string/placeholder_weather_degree"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <TextView
+        android:id="@+id/tv_weather_degree_far"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/img_size"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_toLeftOf="@id/tv_weather_degree_celcius"
+        android:gravity="center_vertical"
+        android:text="@string/placeholder_weather_degree"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x" />
+</RelativeLayout>

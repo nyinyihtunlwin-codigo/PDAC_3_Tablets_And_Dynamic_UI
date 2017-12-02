@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tablets_And_DynamicUI</string>
+    <string name="action_settings">Settings</string>
+    <string name="placeholder_date">Today March 03</string>
+    <string name="placeholder_weather_state">helloworld baby</string>
+    <string name="placeholder_weather_degree">22</string>
+</resources>
